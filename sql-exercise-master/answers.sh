@@ -12,4 +12,4 @@ Basic Queries:
 
 6-UPDATE students SET Points='700' WHERE name='Basma';
 
-7- UPDATE students SET Points='170' WHERE name='Alex';
+7-UPDATE students SET Points='170' WHERE name='Alex';
