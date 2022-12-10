@@ -33,3 +33,15 @@ FROM students WHERE name='Layal';
 set Graduation='08/09/2018' WHERE name='Layal';
 
 10- DELETE FROM students WHERE name='Layal';
+
+Joins:
+
+11- CREATE TABLE production 
+    as SELECT companies.Name, 
+    companies.Date,employees.Name
+    FROM companies, employees
+    WHERE companies.ID = employees.ID;
+
+12-SELECT Name FROM production WHERE production.Date<2000;
+
+13-SELECT Company FROM employees WHERE employees.Role ='Graphic Designer'
