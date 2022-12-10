@@ -13,3 +13,23 @@ Basic Queries:
 6-UPDATE students SET Points='700' WHERE name='Basma';
 
 7-UPDATE students SET Points='170' WHERE name='Alex';
+
+Creating table:
+
+8-CREATE TABLE "graduates" (
+	"ID"	INTEGER NOT NULL,
+	"Name"	TEXT NOT NULL UNIQUE,
+	"Age"	INTEGER,
+	"Gender"	TEXT,
+	"Points"	INTEGER,
+	"Graduation"	TEXT,
+	PRIMARY KEY("ID" AUTOINCREMENT)
+);
+INSERT INTO graduates ('ID', 'name', 'Age','Gender','Points')
+SELECT ID, name, Age,Gender,Points
+FROM students WHERE name='Layal';
+
+9- UPDATE graduates
+set Graduation='08/09/2018' WHERE name='Layal';
+
+10- DELETE FROM students WHERE name='Layal';
