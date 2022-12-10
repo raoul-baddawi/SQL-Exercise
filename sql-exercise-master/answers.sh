@@ -45,3 +45,25 @@ Joins:
 12-SELECT Name FROM production WHERE production.Date<2000;
 
 13-SELECT Company FROM employees WHERE employees.Role ='Graphic Designer'
+
+Count & Filter:
+
+14-SELECT name
+   FROM students
+   WHERE Points = (SELECT MAX(Points) FROM students);
+
+15-SELECT DISTINCT Points FROM students
+   WHERE Points=500
+
+16-SELECT count(name)
+   FROM students
+   WHERE Points=500;
+
+17-SELECT name
+   FROM students
+   WHERE name like '%s%';
+
+18-SELECT name
+   FROM students
+   ORDER BY points
+   DESC;
